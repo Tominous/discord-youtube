@@ -168,7 +168,7 @@ rpc.on('ready', () => {
 
 app.on('ready', () => {
     mainWindow = new BrowserWindow(WindowSettings);
-    //mainWindow.maximize();
+    mainWindow.maximize();
 	if (global.isUPDATE){
 		mainWindow.loadURL(updateUHTM);
 	}else{
