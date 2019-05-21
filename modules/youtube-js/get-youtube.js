@@ -40,7 +40,7 @@ getInfos = `(function(){
 videoCurrentTimeTemp = -1
 async function injectRun(mainWindow) {	
 	infos = await mainWindow.webContents.executeJavaScript(getInfos);
-	/*
+	
 	{
 		details: details,
 		state: state,
@@ -50,7 +50,7 @@ async function injectRun(mainWindow) {
 		smallImageText,
 		endTimestamp: endTime
 	}
-	*/
+	
 	rpcData = {largeImageKey: 'youtube_png', largeImageText: 'Youtube'}
 	if (infos) {
 		let {isLive, creator, videoName, videoDuration, videoCurrentTime, videoPaused} = infos;
